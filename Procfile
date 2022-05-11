@@ -1,1 +1,1 @@
-web: gunicorn Terns_3.wsgi --log-file-
+web: gunicorn Terns_3.wsgi 

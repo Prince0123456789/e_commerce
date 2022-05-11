@@ -26,7 +26,7 @@ def saveuser(request):
         myuser.save()
         print(myuser.username+myuser.password)
         messages.success(request, "Signup Successfull")
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('index')
         #check credentials
     else:
         return HttpResponse("not found")
@@ -44,7 +44,7 @@ def loginvalidate(request):
             return render(request, 'shop/index.html', d)
             
         else:
-            return HttpResponseRedirect('/')   
+            return HttpResponseRedirect('name')   
     else:
         return HttpResponse("Not Logged In")
 
