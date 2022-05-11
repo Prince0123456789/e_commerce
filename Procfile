@@ -1,0 +1,1 @@
+web: gunicorn Terns_3.wsgi --log-file-
